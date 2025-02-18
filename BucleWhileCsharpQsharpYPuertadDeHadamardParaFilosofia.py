@@ -12,8 +12,8 @@ import math
 # En nuestra interpretación de la Fenomenología Hegeliana, la puerta de Hadamard simboliza 
 # la superposición de la tesis y la antítesis, y la medición cuántica simboliza la síntesis que colapsa el 
 # estado cuántico a un estado base. Hegel argumenta que la síntesis es la resolución de la contradicción 
-# entre la tesis y la antítesis. En Q# y C#, la medición cuántica es el proceso que resuelve un proceso de 
-# indeterminación y negación hegeliana en un estado determinado.
+# entre la tesis y la antítesis. En Q# y C#, para nosotros la medición cuántica pasa a ser un proceso que resuelve la 
+# indeterminación y negación hegeliana en un estado "indeterminadamente determinado" (o indeterminado-necesario)
 # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
 # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
@@ -74,13 +74,13 @@ print(f"Estado inicial: {estado_actual}")
     # El 'Bucle while' simula la superposición cuántica y la medición cuántica. El bucle 'While' está activo
     # hasta que los estados superpuestos colapsen, y se aplique una puerta de Hadamard. En teoría, es infinito a menos
     # que el programador aplique una 'forma de colapso', como 'break', aunque ésta, si bien es típica en 'juniors', 
-    # es muy distinta a la de la mecánica cuántica y es muy forzada o disruptiva para proyectos grandes.
+    # es muy distinta a la de la mecánica cuántica y es muy forzada o disruptiva para proyectos grandes [dado que significaría problemas potenciales de escalabilidad].
     ### (el bucle es potencialmente infinito al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
-    ### matemática, pero evidentemente no haremos una regresión lineal hasta antes de Cristo).
+    ### matemática, pero evidentemente no haremos una regresión lineal 'hasta antes de Cristo' o con esas características).
     # En cada iteración, decidimos si se aplica la puerta Hadamard para transformar el estado
     # Aplicamos la puerta Hadamard a cada estado base. Cuando no se aplica Hadamard, el estado se encuentra en
-    # superposición. Cuando colapsa, simplemente está determinado entre '0' y 1''. Ésta analogía me ha servido 
-    # para explicar la fenomenología de Hegel mediante computación cuántica y regresión lineal-histórica.
+    # superposición. Cuando colapsa, simplemente está determinado entre '0' y '1'. Ésta analogía me ha servido 
+    # para explicar la fenomenología de Hegel mediante computación cuántica y regresión lineal-histórica (en las partes eliminadas de la Sección III, sobre Terraria)
    
 while not colapsado:
     iteracion += 1
