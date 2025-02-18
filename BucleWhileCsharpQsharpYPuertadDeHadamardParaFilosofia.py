@@ -82,6 +82,7 @@ print(f"Estado inicial: {estado_actual}")
     # Aplicamos la puerta Hadamard a cada estado base. Cuando no se aplica Hadamard, el estado se encuentra en
     # superposición. Cuando colapsa, simplemente está determinado entre '0' y '1'. Ésta analogía me ha servido 
     # para explicar la fenomenología de Hegel mediante computación cuántica y regresión lineal-histórica (en las partes eliminadas de la Sección III, sobre Terraria)
+    # Sin embargo, la versión sintetizada también incorpora una comprensión implícita sobre la relación entre las Puertas de Hadamard y las negaciones Hegelianas
    
 while not colapsado:
     iteracion += 1
