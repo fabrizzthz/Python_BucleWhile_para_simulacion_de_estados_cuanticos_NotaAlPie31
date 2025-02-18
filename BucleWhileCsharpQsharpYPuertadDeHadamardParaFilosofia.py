@@ -1,27 +1,27 @@
 import random
 import math
+
 #######
 #### IMPORTANTE: Todo éste cálculo está dedicado a la nota al pie número 31 de mi tesis.
-### Asimismo, el código realiza lo siguiente: 
-# Genera un bucle while que simula la superposición cuántica y la medición cuántica, aplicando la puerta Hadamard.
+    ### Asimismo, el código realiza lo siguiente: 
+        # Genera un bucle while que simula la superposición cuántica y la medición cuántica, aplicando la puerta Hadamard.
 
 #### GLOSARIO DE LAS PUERTAS CUÁNTICAS (saltar comentario si no interesa):
-# Las puertas cuánticas son operadores unitarios que actúan sobre los estados cuánticos.
-# La puerta Hadamard es una puerta cuántica (básica y simple) que transforma los estados base en superposiciones.
-# La medición cuántica es el proceso que colapsa el estado cuántico a un estado base.
-# En nuestra interpretación de la Fenomenología Hegeliana, la puerta de Hadamard simboliza 
-# la superposición de la tesis y la antítesis, y la medición cuántica simboliza la síntesis que colapsa el 
-# estado cuántico a un estado base. Hegel argumenta que la síntesis es la resolución de la contradicción 
-# entre la tesis y la antítesis. En Q# y C#, para nosotros la medición cuántica pasa a ser un proceso que resuelve la 
-# indeterminación y negación hegeliana en un estado "indeterminadamente determinado" (o indeterminado-necesario)
-# Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
-# que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
+    # Las puertas cuánticas son operadores unitarios que actúan sobre los estados cuánticos.
+    # La puerta Hadamard es una puerta cuántica (básica y simple) que transforma los estados base en superposiciones.
+    # La medición cuántica es el proceso que colapsa el estado cuántico a un estado base.
+    # En nuestra interpretación de la Fenomenología Hegeliana, la puerta de Hadamard simboliza 
+    # la superposición de la tesis y la antítesis, y la medición cuántica simboliza la síntesis que colapsa el 
+    # estado cuántico a un estado base. Hegel argumenta que la síntesis es la resolución de la contradicción 
+    # entre la tesis y la antítesis. En Q# y C#, para nosotros la medición cuántica pasa a ser un proceso que resuelve la 
+    # indeterminación y negación hegeliana en un estado "indeterminadamente determinado" (o indeterminado-necesario)
+    # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
+    # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
-# NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
-# NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).
-# NOTA 3: Se necesita tener, ante todo, cuidado con errores capa 8.
-
-
+    # NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
+    # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).     
+    # NOTA 3: Se necesita tener, ante todo, cuidado con errores capa 8. 
+    
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
 
 colapsado = False
@@ -70,14 +70,14 @@ print(f"Estado inicial: {estado_actual}")
 
     
     ###### Explicación para Filósofos: 
-    ###La puerta Hadamard es una puerta cuántica básica que transforma los estados base en superposiciones. 
-    ### Es esencial para cualquier computación cuántica, sobre todo para integrar Q# en C#.
+        ###La puerta Hadamard es una puerta cuántica básica que transforma los estados base en superposiciones. 
+        ### Es esencial para cualquier computación cuántica, sobre todo para integrar Q# en C#.
     # El 'Bucle while' simula la superposición cuántica y la medición cuántica. El bucle 'While' está activo
     # hasta que los estados superpuestos colapsen, y se aplique una puerta de Hadamard. En teoría, es infinito a menos
     # que el programador aplique una 'forma de colapso', como 'break', aunque ésta, si bien es típica en 'juniors', 
     # es muy distinta a la de la mecánica cuántica y es muy forzada o disruptiva para proyectos grandes [dado que significaría problemas potenciales de escalabilidad].
-    ### (el bucle es potencialmente infinito al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
-    ### matemática, pero evidentemente no haremos una regresión lineal hasta 'antes de Cristo' o con esas características).
+        ### (el bucle es potencialmente infinito al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
+        ### matemática, pero evidentemente no haremos una regresión lineal hasta 'antes de Cristo' o con esas características).
     # En cada iteración, decidimos si se aplica la puerta Hadamard para transformar el estado
     # Aplicamos la puerta Hadamard a cada estado base. Cuando no se aplica Hadamard, el estado se encuentra en
     # superposición. Cuando colapsa, simplemente está determinado entre '0' y '1'. Ésta analogía me ha servido 
