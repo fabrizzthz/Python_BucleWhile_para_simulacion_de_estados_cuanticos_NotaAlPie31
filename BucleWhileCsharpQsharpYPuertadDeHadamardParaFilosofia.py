@@ -17,7 +17,9 @@ import math
 # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
 # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
-# NOTA: Para ejecutar el código, se necesita tener ante todo cuidado con errores capa 8.
+# NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables en el ecosistema .NET)
+# NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python cualquiera, dado que no uso librerías complejas. 
+# NOTA 3: Se necesita tener ante todo cuidado con errores capa 8.
 
 
 
@@ -109,6 +111,6 @@ while not colapsado:
         print(f"Medición: ¡El sistema colapsa al estado {resultado}!")
         colapsado = True
     else:
-        print("\n>> Medición postergada: El sistema continúa en su danza de incertidumbre, flotando en superposición.")
+        print("\n>> Medición postergada: El sistema continúa en su danza de incertidumbre, flotando en superposición... (sonidos de suspenso)")
     
 print("\nEl proceso de medición ha finalizado. Fin de la simulación, y así se resuelve la incertidumbre.")
