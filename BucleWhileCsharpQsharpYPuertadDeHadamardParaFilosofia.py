@@ -18,8 +18,8 @@ import math
 # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
 # NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
-# NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python cualquiera, dado que no uso librerías complejas. 
-# NOTA 3: Se necesita tener ante todo cuidado con errores capa 8.
+# NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).
+# NOTA 3: Se necesita tener, ante todo, cuidado con errores capa 8.
 
 
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
