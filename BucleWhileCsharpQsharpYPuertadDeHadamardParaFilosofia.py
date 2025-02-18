@@ -17,7 +17,7 @@ import math
 # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
 # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
-# NOTA: Para ejecutar el código, se necesita tener el ordenador encendido, no ser estúpido, respirar, tener buena salud y luz eléctrica; y ante todo cuidado con errores capa 8.
+# NOTA: Para ejecutar el código, se necesita tener ante todo cuidado con errores capa 8.
 
 
 
@@ -75,7 +75,7 @@ print(f"Estado inicial: {estado_actual}")
     # hasta que los estados superpuestos colapsen, y se aplique una puerta de Hadamard. En teoría, es infinito a menos
     # que el programador aplique una 'forma de colapso', como 'break', aunque ésta, si bien es típica en 'juniors', 
     # es muy distinta a la de la mecánica cuántica y es muy forzada o disruptiva para proyectos grandes.
-    ### (es infinita al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
+    ### (el bucle es potencialmente infinito al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
     ### matemática, pero evidentemente no haremos una regresión lineal hasta antes de Cristo).
     # En cada iteración, decidimos si se aplica la puerta Hadamard para transformar el estado
     # Aplicamos la puerta Hadamard a cada estado base. Cuando no se aplica Hadamard, el estado se encuentra en
