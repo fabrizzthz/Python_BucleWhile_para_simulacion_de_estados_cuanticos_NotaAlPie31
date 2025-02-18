@@ -17,10 +17,9 @@ import math
 # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
 # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
 #######
-# NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables en el ecosistema .NET)
+# NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
 # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python cualquiera, dado que no uso librerías complejas. 
 # NOTA 3: Se necesita tener ante todo cuidado con errores capa 8.
-
 
 
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
@@ -78,7 +77,7 @@ print(f"Estado inicial: {estado_actual}")
     # que el programador aplique una 'forma de colapso', como 'break', aunque ésta, si bien es típica en 'juniors', 
     # es muy distinta a la de la mecánica cuántica y es muy forzada o disruptiva para proyectos grandes [dado que significaría problemas potenciales de escalabilidad].
     ### (el bucle es potencialmente infinito al igual que la regresión lineal de la nota al pie 29, eso forma parte de su formalización 
-    ### matemática, pero evidentemente no haremos una regresión lineal 'hasta antes de Cristo' o con esas características).
+    ### matemática, pero evidentemente no haremos una regresión lineal hasta 'antes de Cristo' o con esas características).
     # En cada iteración, decidimos si se aplica la puerta Hadamard para transformar el estado
     # Aplicamos la puerta Hadamard a cada estado base. Cuando no se aplica Hadamard, el estado se encuentra en
     # superposición. Cuando colapsa, simplemente está determinado entre '0' y '1'. Ésta analogía me ha servido 
@@ -113,4 +112,4 @@ while not colapsado:
     else:
         print("\n>> Medición postergada: El sistema continúa en su danza de incertidumbre, flotando en superposición... (sonidos de suspenso)")
     
-print("\nEl proceso de medición ha finalizado. Fin de la simulación, y así se resuelve la incertidumbre.")
+print("\nEl proceso de medición ha finalizado. Fin de la simulación, y así se resuelve la incertidumbre... (Hegel mira orgulloso desde la distancia)")
