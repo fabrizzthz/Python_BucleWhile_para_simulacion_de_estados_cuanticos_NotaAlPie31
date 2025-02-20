@@ -4,7 +4,8 @@ import math
 #######
 #### IMPORTANTE: Todo éste cálculo está dedicado a la nota al pie número 31 de mi tesis.
     ### Asimismo, el código realiza lo siguiente: 
-        # Genera un bucle while que simula la superposición cuántica y la medición cuántica, aplicando la puerta Hadamard.
+        # Genera un 'bucle while' que simula la superposición cuántica y la medición cuántica, aplicando la puerta Hadamard
+        # y conceptos filosóficos reflejados dentro de la tesis "Modelamiento de redes físico-ideales
 
 #### GLOSARIO DE LAS PUERTAS CUÁNTICAS (saltar comentario si no interesa):
     # Las puertas cuánticas son operadores unitarios que actúan sobre los estados cuánticos.
@@ -17,10 +18,13 @@ import math
     # indeterminación y negación hegeliana en un estado "indeterminadamente determinado" (o indeterminado-necesario)
     # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
     # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
+    # Las posibilidades relacionales tienen un aspecto muy profundo en la teoría cuántica, sobre todo en el
+    # concepto de Teleportación respecto de las puertas cuánticas
+    # (la teleportación es la forma en que dos cosas se relacionan sin importar la distancia: ésta definición aplica a
+    # la Mecánica cuántica y los qubits en lenguajes de programación cuánticos)
 #######
     # NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
-    # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).     
-    # NOTA 3: Se necesita tener, ante todo, cuidado con errores capa 8. 
+    # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).
     
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
 
@@ -71,7 +75,7 @@ print(f"Estado inicial: {estado_actual}")
     
     ###### Explicación para Filósofos: 
         ###La puerta Hadamard es una puerta cuántica básica que transforma los estados base en superposiciones. 
-        ### Es esencial para cualquier computación cuántica, sobre todo para integrar Q# en C#.
+        ### Es esencial para cualquier computación cuántica.
     # El 'Bucle while' simula la superposición cuántica y la medición cuántica. El bucle 'While' está activo
     # hasta que los estados superpuestos colapsen, y se aplique una puerta de Hadamard. En teoría, es infinito a menos
     # que el programador aplique una 'forma de colapso', como 'break', aunque ésta, si bien es típica en 'juniors', 
