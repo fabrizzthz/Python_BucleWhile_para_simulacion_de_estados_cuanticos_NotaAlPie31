@@ -17,7 +17,7 @@ import math
     # entre la tesis y la antítesis. En Q# y C#, para nosotros la medición cuántica pasa a ser un proceso que resuelve la 
     # indeterminación y negación hegeliana en un estado "indeterminadamente determinado" (o indeterminado-necesario)
     # Esto también nos sirvió para hablar de "Indeterminaciones necesarias" respecto a ciertas emergencias
-    # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica.
+    # que no son condicionales, sino relacionales, que no pueden modelarse con la Teoría de Grafos clásica, sino que requieren de teleportaciones cuánticas.
     # Las posibilidades relacionales tienen un aspecto muy profundo en la teoría cuántica, sobre todo en el
     # concepto de Teleportación respecto de las puertas cuánticas
     # (la teleportación es la forma en que dos cosas se relacionan sin importar la distancia: ésta definición aplica a
@@ -25,6 +25,9 @@ import math
 #######
     # NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
     # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).
+    # Nota 3: Aquí hay una versión del código traspasado a Q#. Las visualizaciones en consola pueden reinterpretarse como el uso de 'DumpMachine' en Q#. Éstas permiten ver el estado cuántico cuando no ha colapsado
+    # y mientras sigue en superposición. Sin embargo, éste modelo está enfocado más en las partes más básicas, dedicadas a la puerta de Hadamard y no a la función 'DumpMachine', o a la formación de cricuitos
+    # cuánticos en Q#.
     
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
 
