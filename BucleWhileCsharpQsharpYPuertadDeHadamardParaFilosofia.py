@@ -14,7 +14,6 @@ import math
     # la superposición-colapso suele ser 50% (de forma predeterminada), seguir amplitud de Born, 'decoherencia', 'entrelazamiento', etc. En éste caso, "damos por hecho" que ya tenemos ciertas condiciones
     # que limitan la incertidumbre a un 20% de colapso. Sin embargo, evidentemnete es por pedagogía. También pueden implementarse otras condicionantes y funciones, tal que sea
     # más probable que colapse en 0 o 1, o incluso que pueda colapsar en 001, 100, 101, etc., y que ésto se traduzca en colapsos específicos (0/1) como también, directamente, decimales en un rango.
-
 #### GLOSARIO DE LAS PUERTAS CUÁNTICAS (saltar comentario si no interesa):
     # Las puertas cuánticas son operadores unitarios que actúan sobre los estados cuánticos.
     # La puerta Hadamard es una puerta cuántica (básica y simple) que transforma los estados base en superposiciones.
