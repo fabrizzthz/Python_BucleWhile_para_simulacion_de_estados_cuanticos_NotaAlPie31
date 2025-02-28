@@ -26,7 +26,7 @@ import math
     # NOTA 1: Python no es mi lenguaje principal, pero es el más pedagógico para éste caso específico (Mi lenguaje principal es C# y los escalables dentro del ecosistema .NET)
     # NOTA 2: Para ejecutar el código, puede usarse un compilador online de Python con capacidad a librerías (como el de la nota 29).
     # Nota 3: Aquí hay una versión del código traspasado a Q#. Las visualizaciones en consola pueden reinterpretarse como el uso de 'DumpMachine' en Q#. Éstas permiten ver el estado cuántico cuando no ha colapsado
-    # y mientras sigue en superposición. Sin embargo, éste modelo está enfocado más en las partes más básicas, dedicadas a la puerta de Hadamard y no a la función 'DumpMachine', o a la formación de cricuitos
+    # y mientras sigue en superposición. Sin embargo, éste modelo está enfocado más en las partes más básicas, dedicadas a la puerta de Hadamard y no a la función 'DumpMachine', o a la formación de circuitos
     # cuánticos en Q#.
     
 estado_actual = {"|0>": 1+0j, "|1>": 0+0j}
