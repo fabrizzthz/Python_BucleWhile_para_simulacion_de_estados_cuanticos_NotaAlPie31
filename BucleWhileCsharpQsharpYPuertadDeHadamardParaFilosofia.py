@@ -5,7 +5,8 @@ import math
 #### IMPORTANTE: Todo éste cálculo está dedicado a la nota al pie número 31 de mi tesis.
     ### Asimismo, el código realiza lo siguiente: 
         # Genera un 'bucle while' que simula la superposición cuántica y la medición cuántica, aplicando la puerta Hadamard
-        # y conceptos filosóficos reflejados dentro de la tesis "Modelamiento de redes físico-ideales
+        # y conceptos filosóficos reflejados dentro de la tesis "Modelamiento de redes físico-ideales.
+            # Importante: si bien se usa Python por su accesibilidad y "sintaxis pedagógica", la lógica se inspira e imita funcionalidades de Q# (un lenguaje de programación cuántica)
 
 #### GLOSARIO DE LAS PUERTAS CUÁNTICAS (saltar comentario si no interesa):
     # Las puertas cuánticas son operadores unitarios que actúan sobre los estados cuánticos.
