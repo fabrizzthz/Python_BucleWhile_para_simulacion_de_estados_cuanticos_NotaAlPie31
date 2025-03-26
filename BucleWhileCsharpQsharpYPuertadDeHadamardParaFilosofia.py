@@ -11,7 +11,7 @@ import math
 #### EN RELACIÓN A LA TESIS:
     # Cada iteración representa un momento cognoscente. En los "colapsos fallidos", existe una "equiprobabilidad" activa. Es decir, es una representación de la medición actual (en Q# sería un 'DumpMachine')
     # La dinámica del bucle conlleva, principalmente, conservación de estados (superposición), colapso (resolución) y 'equicolapso' (resolución entrópica). En Q# y programación cuántica,
-    # la superposición-colapso suele ser 50% (de forma predeterminada), seguir amplitud de Born, 'decoherencia', 'entrelazamiento', etc. En éste caso, "damos por hecho" que ya tenemos ciertas condiciones
+    # la superposición-colapso suele ser 50% (de forma predeterminada), según la amplitud de Born, 'decoherencia', 'entrelazamiento', etc. En éste caso, "damos por hecho" que ya tenemos ciertas condiciones
     # que limitan la incertidumbre a un 20% de colapso. Sin embargo, evidentemnete es por pedagogía. También pueden implementarse otras condicionantes y funciones, tal que sea
     # más probable que colapse en 0 o 1, o incluso que pueda colapsar en 001, 100, 101, etc., y que ésto se traduzca en colapsos específicos (0/1) como también, directamente, decimales en un rango.
 #### GLOSARIO DE LAS PUERTAS CUÁNTICAS (saltar comentario si no interesa):
